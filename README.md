@@ -1,8 +1,8 @@
 # Installation & use
 
 ```bash
-git clone https://github.com/imamkoo/TK1Laravel.git
-cd TK1Laravel/
+git clone https://github.com/imamkoo/TK2Laravel.git
+cd TK2Laravel/
 composer install
 mv .env.example .env
 # Now, configure your file .env with your DATABASE
