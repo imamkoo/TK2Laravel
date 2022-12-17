@@ -1,0 +1,39 @@
+.card .hover-edit {
+    position: relative;
+    margin-left: 26px;
+    width: 46px;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all 0.5s ease;
+}
+
+.card:hover .hover-edit {
+    opacity: 1;
+}
+
+.card .hover-delete {
+    position: relative;
+    width: 46px;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all 0.5s ease;
+}
+
+.card:hover .hover-delete {
+    opacity: 1;
+}
+
+.card .hover-nilai {
+    color: white;
+    position: relative;
+    margin-left: 56px;
+    margin-bottom: 16px;
+    width: 92px;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all 0.5s ease;
+}
+
+.card:hover .hover-nilai {
+    opacity: 1;
+}
