@@ -54,6 +54,23 @@
                                 <span>Nilai Mahasiswa</span>
                             </a>
                         </li>
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-bar-chart-fill"></i>
+                                <span>Graph</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="{{ route('chart.pie') }}">Pie Graph</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="{{ route('chart.bar') }}">Bar Graph</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="{{ route('chart.line') }}">Line Graph</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
                 <button class="sidebar-toggler btn x"><em data-feather="x"></em></button>

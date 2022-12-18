@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\ChartsController;
+use App\Http\Controllers\ChartController;
 use App\Http\Controllers\MahasiswaController;
 use Illuminate\Support\Facades\Route;
 
@@ -25,3 +25,7 @@ Route::get('/delete/{id}', [MahasiswaController::class, 'delete'])->name('delete
 Route::get('/nilai', [MahasiswaController::class, 'nilai'])->name('nilai');
 Route::get('/createNilai/{id}', [MahasiswaController::class, 'createNilai'])->name('createNilai');
 Route::post('/hitungNilai/{id}', [MahasiswaController::class, 'hitungNilai'])->name('hitungNilai');
+
+Route::get('/chart', [ChartController::class, 'index'])->name('chart.bar');
+Route::get('/pieChart', [ChartController::class, 'pieChart'])->name('chart.pie');
+Route::get('/lineChart', [ChartController::class, 'lineChart'])->name('chart.line');

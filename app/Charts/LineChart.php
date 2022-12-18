@@ -5,7 +5,7 @@ namespace App\Charts;
 use App\Models\Mahasiswa;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
-class Chart
+class LineChart
 {
     protected $chart;
 
@@ -16,16 +16,13 @@ class Chart
 
     public function build()
     {
-        return $this->chart->pieChart()
-            ->setTitle('Graph Grade Mahasiswa')
-            ->setDataset([
+        return $this->chart->lineChart()
+            ->addData('Mahasiswa', [
                 Mahasiswa::where('GPA', '=', 'A')->count(),
                 Mahasiswa::where('GPA', '=', 'B')->count(),
                 Mahasiswa::where('GPA', '=', 'C')->count(),
                 Mahasiswa::where('GPA', '=', 'D')->count(),
                 Mahasiswa::where('GPA', '=', null)->count()
-            ])
-            ->setColors(['#17BEBB', '#F2E863', '#F17105', '#D11149', '#333'])
-            ->setLabels(['Grade A', 'Grade B', 'Grade C', 'Grade D', 'Tidak Punya Nilai']);
+            ])->setXAxis(['A', 'B', 'C', 'D', 'Tidak Punya Nilai']);
     }
 }
