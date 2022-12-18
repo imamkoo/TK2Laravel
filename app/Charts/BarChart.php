@@ -24,6 +24,6 @@ class BarChart
                 Mahasiswa::where('GPA', '=', 'D')->count(),
                 Mahasiswa::where('GPA', '=', null)->count()
             ])
-            ->setXAxis(['A', 'B', 'C', 'D', 'E', 'Tidak Punya Nilai']);
+            ->setXAxis(['A', 'B', 'C', 'D', 'Tidak Punya Nilai']);
     }
 }
